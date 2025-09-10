@@ -279,7 +279,7 @@
             
             p {
                 font-size: 18px; /* تصغير حجم الخط */
-                margin-bottom: 20px; /* تقليل المسافة من 35px إلى 20px */
+                margin-bottom: 15px; /* تقليل المسافة من 35px إلى 20px */
             }
             
             .btn {
@@ -307,7 +307,7 @@
             
             .footer-social-link {
                 font-size: 18px; /* تصغير حجم الأيقونات */
-                margin: 0 8px; /* تقليل المسافة */
+                margin: 0 6px; /* تقليل المسافة */
             }
             
             .copyright {
@@ -372,4 +372,5 @@
                 animation: none;
             }
         }
+
 
