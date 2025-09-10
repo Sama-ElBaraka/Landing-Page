@@ -8,7 +8,7 @@ body {
   color: #0e2e57;
   text-align: center;
   /* تم تغيير الخلفية لاستخدام صورة من المجلد */
-  background: url('../images/Logo_Back_3%.png') no-repeat center center fixed;
+  background: url('images/Logo_Back') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -405,3 +405,4 @@ footer {
     animation: none; /* إيقاف حركة الواتساب على الموبايل */
   }
 }
+
