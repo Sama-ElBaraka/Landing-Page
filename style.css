@@ -7,8 +7,8 @@ body {
   font-family: 'Ahlan', sans-serif;
   color: #0e2e57;
   text-align: center;
-  /* تم تغيير الخلفية لاستخدام صورة من المجلد مع إضافة لون أبيض احتياطي */
-  background: #ffffff url('images/Logo_Back.png') no-repeat center center fixed;
+  /* تم تغيير الخلفية لاستخدام صورة من المجلد */
+  background: url('../images/Logo_Back_3%.png') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -367,6 +367,7 @@ footer {
   
   .btn i {
     font-size: 26px;
+    animation: none; /* إيقاف الحركة على الموبايل لتوفير البطارية */
   }
   
   .btn img {
@@ -399,5 +400,8 @@ footer {
   .btn:nth-child(1) {
     animation: fadeInUp 1s ease-out 0.6s both;
   }
+  
+  .fa-whatsapp {
+    animation: none; /* إيقاف حركة الواتساب على الموبايل */
+  }
 }
-
