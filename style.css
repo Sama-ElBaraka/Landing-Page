@@ -2,18 +2,20 @@
             box-sizing: border-box;
         }
 
-        body {
+          body {
             margin: 0;
             font-family: 'Ahlan', sans-serif;
             color: #0e2e57;
             text-align: center;
-            background: linear-gradient(to bottom, #a1c4fd, #c2e9fb);
+            /* تم تغيير الخلفية لاستخدام صورة من المجلد */
+            background: url('images/Logo_Back.png') no-repeat center center fixed;
+            background-size: cover;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
             padding: 0;
             overflow-x: hidden;
-        }
+          }
 
         .overlay {
             background: rgba(0, 0, 0, 0);
@@ -370,3 +372,4 @@
                 animation: none;
             }
         }
+
