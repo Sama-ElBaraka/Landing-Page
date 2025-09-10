@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+}
+
+    body {
+      margin: 0;
+      font-family: 'Ahlan', sans-serif;
+      color: #0e2e57;
+      text-align: center;
+      /* تم تغيير الخلفية لاستخدام صورة من المجلد */
+      background: url('images/Logo_Back_3%.png') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+
+/* لو الصفحة إنجليزي، طبق فونت Boldwin */
+html[lang="en"] body {
+  font-family: 'Boldwin', sans-serif;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+  padding: 30px 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 30px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  animation: float 3s ease-in-out infinite;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #0e2e57;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  animation: fadeInDown 1s ease-out;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #0e2e57;
+  font-weight: 500;
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 18px;
+  border-radius: 35px;
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: fadeInUp 1s ease-out 0.6s both;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-store {
+  background: #0e2e57;
+}
+
+.btn-store:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp {
+  background: #25d366;
+}
+
+.btn-whatsapp i {
+  font-size: 28px;
+}
+
+.btn-whatsapp:hover {
+  background: #1da851;
+  transform: translateY(-2px);
+}
+
+.btn img {
+  width: 28px;
+  height: 28px;
+  border-radius: 5px;
+}
+
+/* تأثير النبض للزر عند التحميل */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.btn:nth-child(1) {
+  animation: fadeInUp 1s ease-out 0.6s both, pulse 2s infinite 2s;
+}
+
+.btn:nth-child(2) {
+  animation: fadeInUp 1s ease-out 0.8s both;
+}
+
+.btn:nth-child(3) {
+  animation: fadeInUp 1s ease-out 1s both;
+}
+
+/* زر تغيير اللغة */
+.lang-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #0e2e57;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  animation: fadeIn 1s ease-out;
+}
+
+.lang-btn:hover {
+  background: #2563eb;
+  animation: pulse 1s infinite;
+}
+
+/* footer - تم تقليل حجمه */
+footer {
+  background: #0e2e57;
+  padding: 8px 0;
+  text-align: center;
+  margin-top: auto;
+  width: 100%;
+  animation: fadeInUp 1s ease-out 1.2s both;
+}
+
+.footer-content {
+  max-width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer-logo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  margin-bottom: 6px;
+  display: inline-block;
+}
+
+.footer-social-links {
+  margin: 8px 0;
+}
+
+.footer-social-link {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #ffffff;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.footer-social-link:hover {
+  color: #2563eb;
+  transform: translateY(-5px) scale(1.2);
+}
+
+.copyright {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 5px 0;
+}
+
+/* الأنيميشنات */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* تأثير اهتزاز خفيف للأيقونات */
+.fa-whatsapp {
+  animation: shake 1.5s ease-in-out infinite;
+}
+
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  75% { transform: rotate(-5deg); }
+}
+
+/* --- 📱 تحسين الموبايل --- */
+@media (max-width: 768px) {
+  .container {
+    padding: 25px 15px;
+  }
+  
+  .logo img {
+    width: 200px;
+    margin-bottom: 35px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+  
+  p {
+    font-size: 22px;
+    margin-bottom: 35px;
+  }
+  
+  .btn {
+    padding: 20px;
+    font-size: 22px;
+    border-radius: 40px;
+  }
+  
+  .btn i {
+    font-size: 30px;
+  }
+  
+  .btn img {
+    width: 32px;
+    height: 32px;
+  }
+  
+  footer {
+    padding: 10px 0;
+  }
+  
+  .footer-logo {
+    font-size: 20px;
+  }
+  
+  .footer-social-link {
+    font-size: 22px;
+    margin: 0 12px;
+  }
+  
+  .copyright {
+    font-size: 15px;
+  }
+  
+  .lang-btn {
+    padding: 12px 18px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 15px;
+  }
+  
+  .logo img {
+    width: 180px;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 19px;
+    margin-bottom: 30px;
+  }
+  
+  .buttons-container {
+    gap: 15px;
+  }
+  
+  .btn {
+    padding: 18px;
+    font-size: 20px;
+  }
+  
+  .btn i {
+    font-size: 26px;
+  }
+  
+  .btn img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .footer-logo {
+    font-size: 18px;
+  }
+  
+  .footer-social-link {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .copyright {
+    font-size: 13px;
+  }
+  
+  footer {
+    padding: 8px 0;
+  }
+  
+  /* تقليل بعض الحركات على الموبايل */
+  .logo img {
+    animation: float 4s ease-in-out infinite;
+  }
+  
+  .btn:nth-child(1) {
+    animation: fadeInUp 1s ease-out 0.6s both;
+  }
+}
