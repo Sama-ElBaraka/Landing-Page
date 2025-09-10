@@ -272,8 +272,8 @@ footer {
   }
   
   .logo img {
-    width: 200px;
-    margin-bottom: 35px;
+    width: 150px;
+    margin-bottom: 20px;
   }
   
   h1 {
@@ -393,6 +393,7 @@ footer {
     animation: none; /* إيقاف حركة الواتساب على الموبايل */
   }
 }
+
 
 
 
