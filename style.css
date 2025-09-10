@@ -8,7 +8,7 @@ body {
   color: #0e2e57;
   text-align: center;
   /* تم تغيير الخلفية لاستخدام صورة من المجلد مع إضافة لون احتياطي */
-  background: #0e2e5700 url('images/Logo_Back.png') no-repeat center center fixed;
+  background: #f5feff url('images/Logo_Back.png') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -400,4 +400,5 @@ footer {
     animation: fadeInUp 1s ease-out 0.6s both;
   }
 }
+
 
