@@ -40,7 +40,7 @@ html[lang="en"] body {
 }
 
 .logo img {
-  width: 180px;
+  width: 120px;
   height: auto;
   margin-bottom: 30px;
   border: none;
@@ -393,6 +393,7 @@ footer {
     animation: none; /* إيقاف حركة الواتساب على الموبايل */
   }
 }
+
 
 
 
