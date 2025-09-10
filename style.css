@@ -7,8 +7,8 @@ body {
   font-family: 'Ahlan', sans-serif;
   color: #0e2e57;
   text-align: center;
-  /* تم تغيير الخلفية لاستخدام صورة من المجلد مع إضافة لون احتياطي */
-  background: #f5feff url('images/Logo_Back.png') no-repeat center center fixed;
+  /* تم تغيير الخلفية لاستخدام صورة من المجلد مع إضافة لون أبيض احتياطي */
+  background: #ffffff url('../images/Logo_Back_3%.png') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -17,6 +17,17 @@ body {
   overflow-x: hidden;
 }
 
+/* طبقة شبه شفافة لتحسين قراءة النص */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  z-index: -1;
+}
 
 /* لو الصفحة إنجليزي، طبق فونت Boldwin */
 html[lang="en"] body {
@@ -389,6 +400,3 @@ footer {
     animation: fadeInUp 1s ease-out 0.6s both;
   }
 }
-
-
-
